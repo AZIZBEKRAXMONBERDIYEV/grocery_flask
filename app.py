@@ -5,6 +5,9 @@ from db import GroceryDB
 app = Flask(__name__)
 db = GroceryDB()
 
+@app.route('/')
+def index():
+    return 'Hello fromm AZIZBEK'
 
 # view all grocery
 @app.route('/grocery')
